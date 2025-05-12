@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EHR System</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- FullCalendar CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css">
+</head>
+<body>
+    <h1>Electronic Health Record (EHR) System</h1>
+    <div id="login-container">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Username" autocomplete="username">
+        <input type="password" id="password" placeholder="Password" autocomplete="current-password">
+        <button onclick="login()">Login</button>
+    </div>
+    <div id="navigation" style="display:none;">
+        <button onclick="showSection('dashboard')">Dashboard</button>
+        <button onclick="showSection('add-patient')">Add Patient</button>
+        <button onclick="showSection('records')">View Records</button>
+        <button onclick="logout()">Logout</button>
+    </div>
+    <div id="dashboard" class="section" style="display:none;">
+        <h2>Welcome to the EHR Dashboard</h2>
+        <p>Use the navigation above to manage patient records.</p>
+        <div id="calendar"></div>
+    </div>
+    <div id="add-patient" class="section" style="display:none;">
+        <h2>Add Patient Record</h2>
+        <input type="text" id="patientName" placeholder="Full Name">
+        <input type="date" id="dateOfBirth" placeholder="Date of Birth">
+        <input type="tel" id="phoneNumber" placeholder="Phone Number">
+        <input type="text" id="diagnosis" placeholder="Diagnosis">
+        <input type="text" id="prescription" placeholder="Prescription">
+        <button onclick="savePatient()">Save Record</button>
+    </div>
+
+    <div id="records" class="section" style="display:none;">
+        <h2>Patient Records</h2>
+        <input type="text" id="searchQuery" placeholder="Search by name, DOB, or phone">
+        <button onclick="searchPatient()">Search</button>
+        <div id="records-list"></div>
+    </div>
+
+    <!-- FullCalendar JS -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
