@@ -11,7 +11,7 @@ Features
 Installation  
 To get started, clone the repository and install dependencies:  
 
-git clone https://github.com/yourusername/ehr-system.git  
+git clone https://github.com/YousefAlbawab/mock_ehr_system.git  
 cd ehr-system  
 pip install -r requirements.txt  
 python app.py  
