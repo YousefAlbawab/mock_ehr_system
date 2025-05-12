@@ -1,5 +1,3 @@
-Certainly, Yousef! Here’s a rewritten version of your EHR Mock System documentation, keeping the structure intact while refining the wording for clarity and professionalism. 🚀  
-
 EHR Mock System  
 A fully interactive Electronic Health Record (EHR) simulation designed with comprehensive CRUD functionality to manage patient records efficiently.  
 
